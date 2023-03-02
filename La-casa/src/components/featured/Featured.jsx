@@ -1,7 +1,6 @@
 import React from 'react';
 import './featured.scss';
-import smoke from '../../img/smoke.mp4';
-import search from "../../img/search.png";
+import {search,smoke} from './imports'
 
 const Featured = () => {
   return (

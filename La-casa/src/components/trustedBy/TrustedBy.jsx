@@ -1,10 +1,6 @@
 import React from "react";
 import "./trustedBy.scss";
-import lostVape from "../../img/lostvape-logo.png";
-import smoke from "../../img/smok.png";
-import geekVape from "../../img/geek-vape.png";
-import vaporesso from "../../img/vaporesso_logo.png";
-import voopoo from "../../img/voopoo.png";
+import { lostVape,smoke,geekVape,vaporesso,voopoo} from './imports'
 
 const TrustedBy = () => {
   return (
@@ -17,9 +13,6 @@ const TrustedBy = () => {
           <img src={voopoo} alt="" />
           <img src={geekVape} alt="" />
           </div>
-         x
-
-          
     </div>
   );
 };

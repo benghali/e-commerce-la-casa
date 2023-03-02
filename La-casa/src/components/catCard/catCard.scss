@@ -1,28 +1,35 @@
 .catCard{
     width: 252px;
     height: 344px;
-    color: white;
-    border-radius: 5px;
+    background-color: #f7f7f9;
+    border-radius: 30px;
     cursor:pointer;
     position: relative;
 
     img{
         width: 100%;
-        height: 100%;
+        height: 83%;
         object-fit: cover;
     }
-    .desc{
-        font-weight: 300;
-        position: absolute;
-        top: 15px;
-        left: 15px;
-    }
     .title{
-        font-weight: 500;
+        font-weight: 800;
         font-size: 24px;
-        position:absolute;
+        display: flex;
+        justify-content: center;
+        // position:absolute;
+        left: 65px;
+        top: 161px;
+        color: black;
+    
+        
+    }
+    .desc{
+        font-weight: 600;
+        position: absolute;
+        top: 300px;
+        font-size: bold;
+        margin-left: 20px;
         left: 15px;
-        top: 40px;
-
+        color: #CB1A6A;
     }
 }

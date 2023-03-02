@@ -1,51 +1,88 @@
 export const cards = [
     {
       id: 1,
-      title: "AI Artists",
-      desc: "Add talent to AI",
-      img: "https://images.pexels.com/photos/7532110/pexels-photo-7532110.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      title: "GEEK VAPE",
+      desc: "Kit Aegis Legend 2",
+      img: "https://www.lepetitvapoteur.com/34123-large_default/kit-aegis-legend-2-geek-vape.jpg",
     },
     {
       id: 2,
-      title: "Logo Design",
-      desc: "Build yor brand",
-      img: "https://images.pexels.com/photos/11295165/pexels-photo-11295165.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      title: "VOOPOO",
+      desc: "Drag X PRO",
+      img: "https://www.lepetitvapoteur.com/36872-large_default/pack-drag-x-pro-decouverte.jpg",
     },
     {
       id: 3,
-      title: "WordPress",
-      desc: "Customize your site",
-      img: "https://images.pexels.com/photos/4371669/pexels-photo-4371669.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      title: "LOST VAPE",
+      desc: "Box Centaurus Q200",
+      img: "https://www.lepetitvapoteur.com/38770-large_default/box-centaurus-q200-lost-vape.jpg",
     },
     {
       id: 4,
-      title: "Voice Over",
-      desc: "Share your message",
-      img: "https://images.pexels.com/photos/7608079/pexels-photo-7608079.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      title: "SMOK",
+      desc: "Kit Arc Fox",
+      img: "https://www.lepetitvapoteur.com/33329-large_default/kit-arcfox-smok.jpg",
     },
     {
       id: 5,
-      title: "Video Explainer",
-      desc: "Engage your audience",
-      img: "https://images.pexels.com/photos/13388047/pexels-photo-13388047.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      title: "VAPORESSO",
+      desc: "Kit GEN 200",
+      img: "https://www.lepetitvapoteur.com/37828-large_default/kit-gen-200-vaporesso.jpg",
     },
     {
       id: 6,
-      title: "Social Media",
-      desc: "Reach more customers",
-      img: "https://images.pexels.com/photos/11378899/pexels-photo-11378899.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      title: "DIY gourmand ",
+      desc: "Concentré Projet Lenny Vape Or Diy",
+      img: "https://www.lepetitvapoteur.com/17433-large_default/concentre-projet-lenny-30-ml-vape-or-diy.jpg",
     },
     {
       id: 7,
-      title: "SEO",
-      desc: "Unlock growth online",
-      img: "https://images.pexels.com/photos/4820241/pexels-photo-4820241.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      title: "DIY fruité",
+      desc: "Concentré Phoenix 30 ml Ultimate",
+      img: "https://www.lepetitvapoteur.com/28899-large_default/concentre-phoenix-30-ml-ultimate.jpg",
     },
+   
     {
       id: 8,
-      title: "Illustration",
-      desc: "Color you dreams",
-      img: "https://images.pexels.com/photos/15032623/pexels-photo-15032623.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+      title: "ATOUT RDA",
+      desc: "Dead Rabbit V3 RDA",
+      img: "https://www.lepetitvapoteur.com/36421-large_default/dead-rabbit-v3-rda-hellvape.jpg",
+    },
+    {
+      id: 9,
+      title: "ATOUT RDTA",
+      desc: "Profile RDTA WOTOFO",
+      img: "https://www.lepetitvapoteur.com/30302-large_default/atomiseur-profile-rdta-wotofo.jpg",
+    },
+    {
+      id:10,
+      title: "DRIP TIP ",
+      desc: " Drip tip 810 Résine Innokin ",
+      img: "https://www.lepetitvapoteur.com/37096-large_default/drip-tip-810-resine-innokin.jpg",
+    },
+    {
+      id:11,
+      title: "COIL ",
+      desc: " Framed Staple Clapton Coils Wotofo ",
+      img: "https://www.lepetitvapoteur.com/30518-large_default/framed-staple-clapton-coils-wotofo.jpg",
+    },
+    {
+      id:12,
+      title: "COTON",
+      desc: " Cotton Bacon Prime ",
+      img: "https://www.lepetitvapoteur.com/19393-large_default/cotton-bacon-prime.jpg",
+    },
+    {
+      id:13,
+      title: "ACCU",
+      desc: " Accu HG2 18650 3000mAh",
+      img: "https://www.lepetitvapoteur.com/12014-large_default/accu-lg-hg2-18650-3000mah-.jpg",
+    },
+    {
+      id:14,
+      title: "RESISTANCES",
+      desc: " Résistances Z Series Coil Geek Vape",
+      img: "https://www.lepetitvapoteur.com/34535-large_default/resistances-mesh-z-coil-zeus-geek-vape.jpg",
     },
   ];
   
@@ -181,4 +218,36 @@ export const cards = [
       star: 4,
       username: "Wilton Hunt",
     },
+  ];
+  export const vapings=[
+{
+  id:1,
+title:"Moins de produits chimiques",
+desc:"Les cigarettes électroniques ne contient pas de goudron de monoxyde de carbone ou autres substances chimiques toxiques présentes dans la fumée de cigarette."
+},
+{
+  id:2,
+title:" Contrôle de la nicotine",
+desc:" Les e-liquides pour cigarettes électroniques permettent de contrôler la quantité de nicotine absorbée."
+},
+{
+  id:3,
+title:"Moins de risques pour la santé ",
+desc:"Des études ont montré que la vapeur produite par les cigarettes électroniques était moins nocive pour la santé que la fumée de cigarette."
+},
+{
+  id:4,
+title:"Moins d'odeurs",
+desc:"Les cigarettes électroniques ne produisent pas de fumée, ce qui signifie qu'il n'y a pas d'odeur désagréable de tabac froid sur les vêtements, les cheveux et la peau."
+},
+{
+  id:5,
+title:"Plus économique",
+desc:"Les cigarettes électroniques nécessitent moins de recharges et peuvent être réutilisées plusieurs fois."
+},
+{
+  id:6,
+title:"Moins de produits chimiques",
+desc:"Les cigarettes électroniques ne contient pas de goudron de monoxyde de carbone ou autres substances chimiques toxiques présentes dans la fumée de cigarette."
+},
   ];
