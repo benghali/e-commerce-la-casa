@@ -1,16 +1,7 @@
 import { useState } from 'react'
-import Navbar from './components/navbar/Navbar'
-import Footer from './components/footer/Footer'
-import Home from './pages/home/Home'
-import Gigs from './pages/gigs/Gigs'
-import MyGigs from './pages/Mygigs/MyGigs'
-import Add from './pages/add/Add'
-import Message from './pages/message/Message'
-import Messages from './pages/messages/Messages'
-import Orders from './pages/orders/Orders'
+import {Navbar,Footer} from './components'
+import {Home,Gigs,MyGigs,Add,Message,Messages,Orders} from './pages'
 import './app.scss'
-
-
 import {
   createBrowserRouter,
   RouterProvider,
