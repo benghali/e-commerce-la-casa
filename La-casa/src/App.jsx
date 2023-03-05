@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {Navbar,Footer} from './components'
-import {Home,Gigs,MyGigs,Add,Message,Messages,Orders} from './pages'
+import {Home,Gigs,MyGigs,Add,Message,Messages,Orders,Gig} from './pages'
 import './app.scss'
 import {
   createBrowserRouter,
@@ -25,6 +25,10 @@ function App() {
       element: <Layout/>,
       children:[
         {
+          path:"/home",
+          element: <Home/>
+        },
+        {
           path:"/Gigs",
           element: <Gigs/>
         },
@@ -33,16 +37,8 @@ function App() {
           element: <MyGigs/>
         },
         {
-          path:"/home",
-          element: <Home/>
-        },
-        {
           path:"/orders",
           element: <Orders/>
-        },
-        {
-          path:"/add",
-          element: <Add/>
         },
         {
           path:"/messages",
@@ -52,6 +48,22 @@ function App() {
           path:"/message/:id",
           element: <Message/>
         },
+        {
+          path:"/add",
+          element: <Add/>
+        },
+        {
+          path:"gigs/gig/:id",
+          element: <Gig/>
+        },
+        // {
+        //   path:"/register",
+        //   element: <Register/>
+        // },
+        // {
+        //   path:"/login",
+        //   element: <Login/>
+        // },
       ]
     },
   ]);
