@@ -17,7 +17,7 @@ const Gigs = ({ item }) => {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">La Casa > Produits > </span>
+        <span className="breadcrumbs">La Casa &gt Produits &gt </span>
         <h1>VAPORESSO</h1>
         <div className="menu">
           <div className="left">

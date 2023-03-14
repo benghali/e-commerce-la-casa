@@ -1,12 +1,13 @@
 import React from "react";
 import "./gig.scss";
-import {star,Slider,like,dislike,vaporesso,clock,recycle,greenCheck} from './import'
+import Slider from "infinite-react-carousel/lib/carousel/slider";
+import {star,like,dislike,vaporesso,clock,recycle,greenCheck} from './import'
 const Gig = () => {
   return (
     <div className="gig">
       <div className="container">
         <div className="left">
-          <span className="breadCrumbs"> La Casa > Produits > </span>
+          <span className="breadCrumbs"> La Casa &gt Produits &gt </span>
           <h1>description du produit </h1>
           <div className="produit">
             <img className="pp" src={vaporesso} alt="" />

@@ -20,13 +20,13 @@ const curentUser ={
                 </Link>
                 </div>
                 <div className="links">
-                    <span>Home</span>
-                    <span>About Us</span>
+                    <span>Accueil</span>
+                    <span>A propos de Nous</span>
                     <span>DIY</span>
                     <span>Vape</span>
                     {!curentUser?.isSeller && <span>Become a Seller</span>}
                      <span>Sign in</span>
-                    { !curentUser && <button>Join</button>}
+                    { !curentUser && <button>Se connecter</button>}
                     {curentUser && (
                         
                         <div className="user" onClick={()=>setOpen(!open)}>
@@ -36,14 +36,14 @@ const curentUser ={
                                 {
                                     curentUser?.isSeller &&(
                                         <>
-                                        <Link className='link' to="/MyGigs">Gigs</Link >
-                                        <Link className='link' to="/add">Add New Gig</Link >
+                                        <Link className='link' to="/MyGigs">Mes Produits</Link >
+                                        <Link className='link' to="/add">Ajouter Nouveau Produit</Link >
                                         </>
                                     )
                                 }
-                                <Link className='link' to="/orders">Orders</Link >
+                                <Link className='link' to="/orders">Mes Commandes</Link >
                                 <Link className='link' to="/messages">Messages</Link >
-                                <Link className='link' to="/logout">Logout</Link >
+                                <Link className='link' to="/logout">Se déconnecter</Link >
                             </div>}
                         </div>
                     )}
