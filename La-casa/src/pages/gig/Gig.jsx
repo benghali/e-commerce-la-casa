@@ -35,7 +35,7 @@ const Gig = () => {
               alt=""
             />
           </Slider>
-          <h2>A props de ce Produit </h2>
+          <h2>A propos de ce Produit </h2>
           <p>
             Le kit Gen 200 est une cigarette électronique fonctionnant avec deux
             accus 18650 et qui reste d'une étonnante légèreté. Fabriqué avec des
