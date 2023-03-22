@@ -39,6 +39,14 @@ app.use('/api/orders', orderRouter);
 app.use('/api/conversations', conversationRouter);
 app.use('/api/messages', messagesRouter);
 app.use('/api/review', reviewRouter);
+// error handler function 
+
+app.use((err,req,res,next)=>{
+  const errorStatus=err.status || 500;
+  const errorMessage=err.message || "Something went wrong !!";
+
+  return res.status(errorStatus).send(errorMessage)
+})
 
 // Start server
 const port = process.env.PORT || 8800;

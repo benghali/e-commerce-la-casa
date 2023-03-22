@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {Navbar,Footer} from './components'
-import {Home,Gigs,MyGigs,Add,Message,Messages,Orders,Gig} from './pages'
+import {Home,Gigs,MyGigs,Add,Message,Messages,Orders,Gig,Register,Login} from './pages'
 import './app.scss'
 import {
   createBrowserRouter,
@@ -56,14 +56,14 @@ function App() {
           path:"gigs/gig/:id",
           element: <Gig/>
         },
-        // {
-        //   path:"/register",
-        //   element: <Register/>
-        // },
-        // {
-        //   path:"/login",
-        //   element: <Login/>
-        // },
+        {
+          path:"/register",
+          element: <Register/>
+        },
+        {
+          path:"/login",
+          element: <Login/>
+        },
       ]
     },
   ]);

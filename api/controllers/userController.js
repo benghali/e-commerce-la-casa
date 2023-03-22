@@ -1,18 +1,23 @@
 const User = require('../models/userModels.js');
 const jwt =require('jsonwebtoken');
+const {createError} = require("../utils/createError.js")
 
 
 
+const deleteUser = async (req,res,next)=>{
+const user = await User.findById(req.params.id)
+// console.log(req.params.id,"userId")
+// console.log(jwtKey,"jwtKey")
 
-const deleteUser = async (req,res)=>{
-    const token=req.cookies.accessToken;
-if(!token) return (res.status(401).send("you are not authenticated"))
+    const idUser= user._id;
+    if(req.userId !== idUser.toString()){
+    
+       return next(createError(401,"you can delete only your account"))
+    };
+    await User.findByIdAndDelete(req.params.id)
+    res.send("deleted !!")
 
-jwt.verify(token,process.env.JWT_KEY,(err,payload)=>{
-    res.send(payload)
-})
 
-// await User.findByIdAndDelete(req.params.id)
 }
 
 
