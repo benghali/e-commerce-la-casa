@@ -13,7 +13,7 @@ function Register() {
     img: "",
     country: "",
     isSeller: false,
-    desc: "",
+
   });
 
   const navigate = useNavigate();
@@ -38,7 +38,7 @@ function Register() {
         ...user,
         img: url,
       });
-      navigate("/")
+      navigate("/home");
     } catch (err) {
       console.log(err);
     }
@@ -52,7 +52,7 @@ function Register() {
           <input
             name="username"
             type="text"
-            placeholder="johndoe"
+            placeholder="Ecrire votre Prénom"
             onChange={handleChange}
           />
           <label htmlFor="">Email</label>
@@ -63,9 +63,16 @@ function Register() {
             onChange={handleChange}
           />
           <label htmlFor="">Mot de passe</label>
-          <input name="password" type="password" onChange={handleChange} />
+          <input 
+          name="password" 
+          type="password" 
+          onChange={handleChange} 
+          />
           <label htmlFor="">Ajouter une Photo </label>
-          <input type="file" onChange={(e) => setFile(e.target.files[0])} />
+          <input 
+          type="file"
+           onChange={(e) => setFile(e.target.files[0])} 
+           />
           <label htmlFor="">Pays</label>
           <input
             name="country"
@@ -73,7 +80,7 @@ function Register() {
             placeholder="Usa"
             onChange={handleChange}
           />
-          <button type="submit">Enregister</button>
+          <button type="submit"  >Enregister</button>
         </div>
         <div className="right">
           <h1>Je veux devenir vendeur</h1>
@@ -91,7 +98,6 @@ function Register() {
             placeholder="+1 234 567 89"
             onChange={handleChange}
           />
-          
         </div>
       </form>
     </div>

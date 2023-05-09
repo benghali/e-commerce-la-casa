@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require('mongoose');
 const cookieParser = require('cookie-parser');
 const dotenv = require('dotenv');
-
+const cors=require('cors')
 // Load environment variables from .env file
 dotenv.config();
 
@@ -30,7 +30,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
-
+app.use(cors({origin:"http://localhost:5173",credentials:true}))
 // Routes
 app.use('/api/auth', authRouter);
 app.use('/api/user', userRouter);
